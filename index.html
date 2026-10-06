@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PoleZenSchool — повітряна акробатика та пілонний спорт в Одесі</title>
+<meta name="description" content="Школа повітряної акробатики та пілонного спорту для дітей та дорослих в Одесі. Pole Sport, Pole Exot, полотна, гамак, кільце, акробатика, паркур, stretching. Разове заняття 350 грн.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PoleZenSchool — повітряна акробатика та пілонний спорт">
+<meta property="og:description" content="12 напрямків для дітей та дорослих, два зали в Одесі. Разове заняття 350 грн.">
+<meta property="og:locale" content="uk_UA">
+<meta name="theme-color" content="#1f1830">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"PoleZenSchool","description":"Школа повітряної акробатики та пілонного спорту для дітей та дорослих","sameAs":["https://www.instagram.com/pole_zen_school/"],
+ "location":[{"@type":"SportsActivityLocation","name":"PoleZenSchool — Центр","address":{"@type":"PostalAddress","streetAddress":"Старосінна площа, 3","addressLocality":"Одеса","addressCountry":"UA"}},
+ {"@type":"SportsActivityLocation","name":"PoleZenSchool — Котовського","address":{"@type":"PostalAddress","streetAddress":"вул. Семена Палія, 99-в, ТЦ «Меркурій», 4 поверх","addressLocality":"Одеса","addressCountry":"UA"}}]}</script>
+</head>
+<body>
+
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">Pole<span>Zen</span>School</a>
+    <nav aria-label="Розділи">
+      <ul>
+        <li><a href="#napriamky">Напрямки</a></li>
+        <li><a href="#pershe">Перше заняття</a></li>
+        <li><a href="#tsiny">Ціни</a></li>
+        <li><a href="#adresy">Як нас знайти</a></li>
+        <li><a href="#kontakty">Контакти</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#kontakty">Записатися</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">Одеса · два зали</p>
+      <h1 style="margin-top:12px">Школа повітряної акробатики та&nbsp;<em>пілонного спорту</em></h1>
+      <p class="lead">Для дітей та дорослих. Пілон, полотна, гамак, кільце, акробатика, паркур і розтяжка в одній школі.</p>
+      <div class="ctas">
+        <a class="btn" href="#pershe">Прийти на перше заняття</a>
+        <a class="btn ghost" href="#napriamky">Усі напрямки</a>
+      </div>
+      <div class="facts">
+        <div><b>12</b>напрямків</div>
+        <div><b>2</b>зали в Одесі</div>
+        <div><b>350 грн</b>разове заняття</div>
+      </div>
+    </div>
+    <div class="apparatus" aria-hidden="true">
+      <svg viewBox="0 0 300 400" fill="none">
+        <!-- стеля -->
+        <rect x="20" y="8" width="260" height="6" rx="3" fill="var(--line)"/>
+        <!-- пілон -->
+        <rect x="76" y="14" width="8" height="380" rx="4" fill="var(--ink)" opacity=".85"/>
+        <rect x="60" y="388" width="40" height="6" rx="3" fill="var(--ink)" opacity=".85"/>
+        <!-- полотна -->
+        <path d="M168 14 C160 120 182 200 170 300 C166 340 176 370 172 396" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" opacity=".9"/>
+        <path d="M184 14 C190 110 172 210 186 300 C190 336 182 372 188 396" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+        <!-- кільце -->
+        <line x1="250" y1="14" x2="250" y2="150" stroke="var(--muted)" stroke-width="3"/>
+        <circle cx="250" cy="196" r="44" stroke="var(--sage)" stroke-width="9"/>
+      </svg>
+    </div>
+  </div>
+
+  <section id="napriamky">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Напрямки</p>
+          <h2 style="margin-top:8px">Оберіть, з чого почати</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Фільтр за віком">
+          <button class="chip" type="button" id="f-all" data-f="all" aria-pressed="true">Усі</button>
+          <button class="chip" type="button" id="f-kids" data-f="kids" aria-pressed="false">Для дітей</button>
+          <button class="chip" type="button" id="f-adult" data-f="adult" aria-pressed="false">Для дорослих</button>
+        </div>
+      </div>
+      <div class="groups" id="groups"></div>
+    </div>
+  </section>
+
+  <section id="pershe">
+    <div class="wrap">
+      <div class="first">
+        <div class="price">350<small>грн</small></div>
+        <div>
+          <h2>Перше заняття</h2>
+          <p>Окремого пробного заняття немає: ви приходите на звичайне разове тренування. Якщо сподобається, одразу після нього можна оформити абонемент, і ці 350 грн зарахуються в його вартість.</p>
+          <ul class="steps">
+            <li><span>1</span>Напишіть нам і оберіть напрямок та зал</li>
+            <li><span>2</span>Прийдіть на тренування у зручному одязі</li>
+            <li><span>3</span>Оформіть абонемент. Разове заняття враховується в оплату</li>
+          </ul>
+          <a class="btn" href="#kontakty">Записатися</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tsiny">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Ціни та розклад</p>
+          <h2 style="margin-top:8px">Абонементи</h2>
+        </div>
+      </div>
+      <div class="two">
+        <div class="panel">
+          <h3>Вартість</h3>
+          <div class="rows">
+            <div><span>Разове заняття</span><b>350 грн</b></div>
+            <div><span>Абонемент 4 заняття</span><b class="soon">уточнюється</b></div>
+            <div><span>Абонемент 8 занять</span><b class="soon">уточнюється</b></div>
+            <div><span>Абонемент 12 занять</span><b class="soon">уточнюється</b></div>
+          </div>
+          <p class="note">Ціни абонементів буде додано найближчим часом.</p>
+        </div>
+        <div class="panel">
+          <h3>Розклад</h3>
+          <div class="rows">
+            <div><span>Центр, Старосінна пл., 3</span><b class="soon">уточнюється</b></div>
+            <div><span>Котовського, вул. Семена Палія, 99-в</span><b class="soon">уточнюється</b></div>
+          </div>
+          <p class="note">Актуальний розклад груп підкажемо в повідомленнях.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="adresy">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Як нас знайти</p>
+          <h2 style="margin-top:8px">Два зали в Одесі</h2>
+        </div>
+      </div>
+      <div class="locs">
+        <div class="loc">
+          <div class="district">Центр</div>
+          <address>Старосінна площа, 3</address>
+          <iframe class="map" title="Карта" loading="lazy" src="https://maps.google.com/maps?q=%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D1%81%D1%96%D0%BD%D0%BD%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%B0+3+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0&output=embed"></iframe>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D1%81%D1%96%D0%BD%D0%BD%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%B0+3+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0" target="_blank" rel="noopener">Маршрут у Google Maps</a>
+        </div>
+        <div class="loc">
+          <div class="district">Котовського</div>
+          <address>вул. Семена Палія, 99-в</address>
+          <p class="hint">ТЦ «Меркурій», 4-й поверх</p>
+          <iframe class="map" title="Карта" loading="lazy" src="https://maps.google.com/maps?q=%D0%A1%D0%B5%D0%BC%D0%B5%D0%BD%D0%B0+%D0%9F%D0%B0%D0%BB%D1%96%D1%8F+99%D0%B2+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0&output=embed"></iframe>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%B5%D0%BC%D0%B5%D0%BD%D0%B0+%D0%9F%D0%B0%D0%BB%D1%96%D1%8F+99%D0%B2+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0" target="_blank" rel="noopener">Маршрут у Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakty">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Запис</p>
+          <h2 style="margin-top:8px">Напишіть нам</h2>
+        </div>
+        <p>Підкажемо, яка група підійде за віком і рівнем підготовки, та запишемо на заняття.</p>
+      </div>
+      <div class="contact">
+        <a href="https://ig.me/m/pole_zen_school" target="_blank" rel="noopener"><span class="k">Instagram</span><span class="v">@pole_zen_school</span></a>
+        <div><span class="k">Telegram</span><span class="v soon">буде додано</span></div>
+        <div><span class="k">Viber</span><span class="v soon">буде додано</span></div>
+        <div><span class="k">Телефон</span><span class="v soon">буде додано</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© PoleZenSchool · Одеса</span>
+    <a href="https://www.instagram.com/pole_zen_school/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<a class="btn float" href="#kontakty">Записатися на заняття</a>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
