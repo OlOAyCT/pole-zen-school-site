@@ -1,14 +1,25 @@
 # PoleZenSchool — сайт
 
 Статичний сайт школи повітряної акробатики та пілонного спорту (Одеса).
+Живий сайт: https://oloayct.github.io/pole-zen-school-site/
 
-- `index.html` — сторінка (тексти, адреси, ціни, контакти)
-- `data.js` — список напрямків
-- `styles.css` — оформлення
-- `script.js` — фільтр напрямків
+## Як оновити дані
+Майже все змінюється в одному файлі **`data.js`**:
+- `CONTACTS` — посилання для запису, Instagram, Telegram, Viber, телефон
+- `HALLS` — адреси залів
+- `PRICES` — ціни (`null` = «уточнюється»)
+- `SCHEDULE` — розклад по залах
+- `GROUPS` — напрямки
+- `COACHES` — тренери (фото кладіть у `assets/`)
+- `GALLERY` — фото для галереї (теж у `assets/`)
+
+Тексти блоків «Чому ми» та «Питання» — в `index.html`.
+
+## Файли
+- `index.html` — сторінка
+- `styles.css` — оформлення (кольори з логотипу)
+- `script.js` — виводить дані з `data.js`
+- `assets/og.png` — картинка для превʼю посилання в месенджерах
 
 ## Публікація
-GitHub → Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)`.
-
-## Локальний перегляд
-Відкрийте `index.html` у браузері або `python3 -m http.server`.
+GitHub Pages з гілки `main`. Після пушу сайт оновлюється приблизно за хвилину.
